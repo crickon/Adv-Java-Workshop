@@ -2,7 +2,7 @@
  * HackBI Advanced Java and GUI workshop
  * 
  * File Reading and Writing
- * Author: Matthew Grillo (Github: "crickon")
+ * Author: Matthew Grillo (@crickon)
  * Date: October 26, 2018
  */
 import java.io.*;
@@ -38,15 +38,11 @@ public class FileReading {
 				System.out.println(line);
 				line = input.readLine();
 			}
+			// Once all of the lines have been read the reader is useless, so close it.
 			input.close();
 		} catch (IOException e) {
 			// Exception produced if the reader gets interrupted in it's process.
 			e.printStackTrace();
-		}
-		try {
-			// Once all of the lines have been read the reader is useless, so close it.
-			input.close();
-		} catch (IOException e) {
 		}
 	}
 
@@ -63,7 +59,7 @@ public class FileReading {
 		PrintWriter output = new PrintWriter(writer);
 		output.println("Now we have added to the end of the file.");
 		
-		// Always close the PrintWriter, or what is printed will not be written.
+		// Always close the PrintWriter, or what is printed will not be written onto the file.
 		output.close();
 	}
 }
