@@ -1,0 +1,4 @@
+Welcome to HackBI!
+
+This is a test file that we are going to be using during the Advanced Java and GUI workshop.
+Basically I just want to make a whole bunch of text for testing purposes.
